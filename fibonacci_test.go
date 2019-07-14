@@ -15,5 +15,6 @@ var _ = Describe("Fibonacci", func() {
 		func(steps int, expected int) {
 			Expect(fibonacci.Fib(steps)).To(Equal(expected))
 		},
+		Entry("fib(0)", 0, 0),
 	)
 })
