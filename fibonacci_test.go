@@ -20,5 +20,6 @@ var _ = Describe("Fibonacci", func() {
 		Entry("fib(2)", 2, 1),
 		Entry("fib(3)", 3, 2),
 		Entry("fib(4)", 4, 3),
+		Entry("fib(5)", 5, 5),
 	)
 })

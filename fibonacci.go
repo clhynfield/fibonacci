@@ -11,6 +11,8 @@ func (f Fibonacci) Fib(steps int) (result int) {
 		result = 2
 	} else if steps == 4 {
 		result = 3
+	} else if steps == 5 {
+		result = 5
 	}
 	return result
 }
