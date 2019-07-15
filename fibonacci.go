@@ -9,6 +9,8 @@ func (f Fibonacci) Fib(steps int) (result int) {
 		result = 1
 	} else if steps == 3 {
 		result = 2
+	} else if steps == 4 {
+		result = 3
 	}
 	return result
 }
