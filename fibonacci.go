@@ -7,12 +7,8 @@ type Fibonacci struct{}
 func (f Fibonacci) Fib(steps int) (result int) {
 	if steps == 1 || steps == 2 {
 		result = 1
-	} else if steps == 3 {
-		result = f.Fib(2) + f.Fib(1)
-	} else if steps == 4 {
-		result = f.Fib(3) + f.Fib(2)
-	} else if steps == 5 {
-		result = f.Fib(4) + f.Fib(3)
+	} else if steps > 2 {
+		result = f.Fib(steps-1) + f.Fib(steps-2)
 	}
 	return result
 }
